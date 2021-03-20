@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Inscription</title>
+</head>
+
+<body style="background-image: url(https://i.pinimg.com/originals/f5/f5/25/f5f525205e87ed79d87641563ffd8899.jpg);">
+  <h1 class="font-weight-bold text-center">Inscription en licence</h1>
+  <form action="GET" class="container text-center">
+    <div class="card d-flex" style="background-color:rgba(245, 240, 240, 0.548);">
+      <div class="card-header font-weight-bold " style="background-color: rgba(128, 128, 128, 0.733);">
+        Information personneles
+      </div>
+      <div class="card-body d-flex flex-column justify-content-center">
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="nom" id="nom" class="form-label">Votre nom</label>
+          <input type="text" class="ml-2 form-control w-auto " pattern="[a-zA-Z]+" name="nom" id="nom"
+            placeholder="Votre nom ?" required>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="Prenom" class="form-label">Votre prenom</label>
+          <input type="text" class="ml-2 form-control w-auto " pattern="[a-zA-Z]+" name="prenom" id="prenom"
+            placeholder="Votre prenom ?" required>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center fl ">
+          <label for="age" class="form-label">Votre age</label>
+          <input type="text" class="ml-2 form-control w-auto " name="age" pattern="[0-9]{2}" id="age"
+            placeholder="Votre age ?">
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="dtn" class="form-label">Date naissance</label>
+          <input type="date" class="ml-2 form-control w-auto " name="date" id="dtn">
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="adresse" class="form-label">Votre adresse</label>
+          <textarea id="adr" class="ml-2 form-control w-auto" rows="2" name="adresse"
+            placeholder="Votre adresse ?"></textarea>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="url" class="form-label">Votre url</label>
+          <input type="text" class="ml-2 form-control w-auto " name="url" id="url" placeholder="Votre url?">
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="email" class="form-label">Votre email</label>
+          <input type="email" class="ml-2 form-control w-auto " name="email" id="email" placeholder="Votre email?" required>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="mdp" class="form-label">Mot de passe</label>
+          <input type="password" class="ml-2 form-control w-auto " placeholder="Password" name="mdp" id="mdp" required>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center ">
+          <label for="vmdp" class="form-label">Retapez votre Mot de passe</label>
+          <input type="password" class="ml-2 form-control w-auto " placeholder="Password" name="vmdp" id="vmdp" required>
+        </div>
+      </div>
+    </div>
+    <div class="card d-flex " style="background-color:rgba(245, 240, 240, 0.548);">
+      <div class="card-header font-weight-bold" style="background-color: rgba(128, 128, 128, 0.733);">
+        Gestion des groupes et des options
+      </div>
+      <div class="card-body d-flex flex-column  ">
+        <div class="justify-content-center mb-3">
+          <label for="group">Votre Groupe :</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="groupe" id="groupe1" value="group1">
+            <label class="form-check-label" for="group1">Groupe1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input " type="radio" name="groupe" id="groupe2" value="group2">
+            <label class="form-check-label" for="group2">Groupe2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input " type="radio" name="groupe" id="groupe3" value="group3">
+            <label class="form-check-label" for="group2">Groupe3</label>
+          </div>
+        </div>
+        <div class="mb-3 d-inline-flex justify-content-center">
+          <label for="number" class="form-label">Numero de carte d'etudiant</label>
+          <input type="text" class="form-control w-auto ml-2 " pattern="^[0-9]{8}" name="CarteE" id="NCart"
+            placeholder="Numero de carte d'etudiant?">
+        </div>
+        <div class="d-inline-flex justify-content-center">
+          <label for="floatingSelect">Choisissez les options due vous desirez</label>
+          <select name=option  multiple class="form-select form-control w-auto ml-2" id="floatingSelect"
+            aria-label="Floating label select example">
+            <option value="Html5">Html5</option>
+            <option value="Android">Android</option>
+            <option  value="Flex">Flex</option>
+            <option  value=".Net">.Net</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-success mb-2">Validier</button>
+    <button type="reset" class="btn btn-danger mb-2">reinitialiser</button>
+  </form>
+
+</body>
+
+</html>
